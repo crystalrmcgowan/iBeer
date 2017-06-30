@@ -16,6 +16,7 @@ body{
     line-height: 1.8;
     margin: 0;
     background-color: #eeebda;
+    margin-left: 500px;
 
 }
 h1, h2, h3{
@@ -36,6 +37,7 @@ img{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+
     /*
         TODO:
         - Center up the page
@@ -90,6 +92,7 @@ img{
     flex-direction: row;
     flex-wrap: wrap;
     font-size: 0.5em;
+    justify-content: space-between;
     /*
         TODO:
         - Use Flexbox to arrange the navigation links
@@ -100,10 +103,9 @@ img{
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 10px 20px;
+    padding: 20px 20px;
+    margin-left: 50px
 
-    display: flex;
-    align-items: center;
     /*
         TODO:
         - Flexbox - Create general spacing between nav links
@@ -112,6 +114,7 @@ img{
 #main-navigation #logo{
     margin-right: 400px;
     display: flex;
+    justify-content: flex-start;
     /*
         TODO:
         - Flexbox - The logo needs to take up more space
@@ -124,10 +127,10 @@ main{
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
 
     display: flex;
-    width: 60%;
+    width: 70%;
     flex-direction: column;
     position: relative;
-    top: 0em;
+    top: -2em;
 
     /*
         TODO:
@@ -139,16 +142,17 @@ aside{
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
-    width: 30%;
+    width: 20%;
     position: relative;
-    top: 0em;
+    top: -2em;
 
     /*
         TODO:
         - Flexbox: Set the starting width of this element
-        - Use relative positioning to bump this upward
+        - Use relative positioning to bump this upward whatever I want
     */
 }
+
 aside h3{
     text-align: center;
     margin: 0 0 10px 0;
@@ -165,6 +169,7 @@ article{
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
     padding: 20px;
     margin-bottom: 20px;
+    border: 5px solid gray;
 }
 article h2{
     line-height: 1em;
@@ -194,6 +199,12 @@ article img{
     */
 }
 article footer p{
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: 150px;
+    border-top: 1px solid gray;
+    text-align: center;
+
+
     /*
         TODO:
         - Style the article footer
@@ -207,9 +218,10 @@ article footer p{
     background: #333;
     text-align: center;
     padding: 60px 0 30px 0;
-    font-size: 4em;
+    font-size: 3em;
     color: white;
     margin-top: 50px;
+    font-family: Noto Serif;
     /*
         TODO:
         - Style the site footer
